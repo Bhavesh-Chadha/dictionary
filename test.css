@@ -1,0 +1,28 @@
+.par .card {}
+
+.card {
+    display: flex;
+    margin: auto;
+    height: 70vh;
+    width: 80vh;
+    justify-content: center;
+    border: 1px grey;
+    border-radius: 2.5rem;
+    box-shadow: 4px 4px 16px;
+    vertical-align: middle;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card_data {
+    padding: 8px;
+    text-align: center;
+    height: 10vh;
+    vertical-align: middle;
+
+     max-height:20vh;
+    width: 50vh;
+    border-radius: 2.5rem;
+    box-shadow: 1px 1px 3px;
+}
+]
