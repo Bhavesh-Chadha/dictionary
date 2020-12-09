@@ -27,10 +27,18 @@ function search() {
         meaning = json[0].meanings[0].definitions[0].definition;
         example = json[0].meanings[0].definitions[0].example
         synonyms = json[0].meanings[0].definitions[0].synonyms[0]
+        audio=  document.createElement("AUDIO")
+        audio.setAttribute("src",json[0].phonetics[0].audio)
+        audio.setAttribute("controls","controls")
+        audio.setAttribute("autoplay","autoplay")
+        
+        // inputDiv2.appendChild(audio);
         console.log(meaning)
         inputDiv1.innerText = "Meaning:\n" + meaning // + "\n\nExample:\n" + example + "Synonyms:\n" + synonyms
-        inputDiv2.innerText = "Example:\n" + example
-        inputDiv3.innerText = "Synonyms:\n" + synonyms
+        inputDiv2.innerText = "Pronounciation:\n"
+        inputDiv2.appendChild(audio);        
+        inputDiv3.innerText = "Example:\n" + example
+        inputDiv4.innerText = "Synonyms:\n" + synonyms
     })
 
 }
