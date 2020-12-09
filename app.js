@@ -1,4 +1,5 @@
 wordSearch = document.querySelector("#txt-area")
+outputDiv = document.querySelector("#output-div")
 inputDiv1 = document.querySelector("#input-div1")
 inputDiv2 = document.querySelector("#input-div2")
 inputDiv3 = document.querySelector("#input-div3")
@@ -6,6 +7,7 @@ inputDiv4 = document.querySelector("#input-div4")
 searchButton = document.querySelector("#searchButton")
 var word = wordSearch.value
 a = "word"
+
 url = "https://api.dictionaryapi.dev/api/v2/entries/en/"
 // url1 = url + word //wordSearch.value
 
@@ -14,6 +16,7 @@ url = "https://api.dictionaryapi.dev/api/v2/entries/en/"
 // }
 
 function search() {
+    outputDiv.style.display = "flex";
     url = "https://api.dictionaryapi.dev/api/v2/entries/en/"
     url = url + wordSearch.value
 
